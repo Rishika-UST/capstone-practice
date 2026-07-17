@@ -123,6 +123,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+    <groupId>org.flywaydb</groupId>
+    <artifactId>flyway-mysql</artifactId>
+    <version>10.22.0</version>
+</dependency>
+
     </dependencies>
 
     <build>
