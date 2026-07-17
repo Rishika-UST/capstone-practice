@@ -1,0 +1,63 @@
+name: API Automation Tests
+
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+
+
+jobs:
+
+  api-test:
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+
+      # Checkout code
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+
+
+      # Setup Java
+      - name: Setup Java
+        uses: actions/setup-java@v4
+
+        with:
+          java-version: '22'
+          distribution: 'temurin'
+
+
+
+      # Verify Docker
+      - name: Check Docker
+        run: docker --version
+
+
+
+      # Run API Tests
+      - name: Execute API Automation Tests
+        run: mvn clean test
+
+
+
+      # Upload Test Results
+      - name: Upload Surefire Reports
+        if: always()
+
+        uses: actions/upload-artifact@v4
+
+        with:
+
+          name: test-results
+
+          path: target/surefire-reports
