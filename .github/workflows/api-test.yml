@@ -45,6 +45,7 @@ jobs:
 
       # Run API Tests
       - name: Execute API Automation Tests
+        working-directory: api-Automation
         run: mvn clean test
 
 
