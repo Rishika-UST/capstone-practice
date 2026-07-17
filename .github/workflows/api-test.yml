@@ -3,7 +3,7 @@ name: API Automation Tests
 on:
   push:
     branches:
-      - main
+      - rishika-final-capstone
 
   pull_request:
     branches:
