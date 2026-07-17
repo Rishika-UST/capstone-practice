@@ -26,6 +26,7 @@ public class DatabaseContainer {
                         mysql.getUsername(),
                         mysql.getPassword()
                 )
+                .locations("classpath:db/migration")
                 .load()
                 .migrate();
 
