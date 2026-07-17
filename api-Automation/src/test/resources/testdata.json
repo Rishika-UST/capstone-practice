@@ -1,0 +1,11 @@
+{
+  "booking": {
+    "journeyType": "flight",
+    "inventoryId": "FL-DELBLR-51",
+    "seatIds": [
+      "15A"
+    ],
+    "refundable": true,
+    "holdTtlSec": 120
+  }
+}
