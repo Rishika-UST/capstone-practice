@@ -3,7 +3,7 @@
     "journeyType": "flight",
     "inventoryId": "FL-DELBLR-51",
     "seatIds": [
-      "15A"
+      "16A"
     ],
     "refundable": true,
     "holdTtlSec": 120
