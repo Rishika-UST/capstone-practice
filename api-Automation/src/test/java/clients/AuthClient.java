@@ -10,7 +10,6 @@ import static io.restassured.RestAssured.given;
 
 public class AuthClient {
 
-
     public String login(){
         Response response =
                 given()
